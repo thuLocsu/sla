@@ -8,7 +8,7 @@ const HttpProxyAgent = require('http-proxy-agent');
 const helmet = require('helmet');
 
 // a api só pode ser acessada de localhost ou de uma lista de urls confiáveis
-const allowedOrigins = ['http://localhost'];
+const allowedOrigins = ['http://localhost', 'https://ahcrlvps.vercel.app/'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
